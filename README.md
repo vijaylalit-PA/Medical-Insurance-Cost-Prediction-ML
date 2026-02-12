@@ -1,70 +1,74 @@
 # 🏥 Medical Insurance Cost Prediction using Machine Learning
 
-> An end-to-end regression-based machine learning project for predicting healthcare insurance charges using demographic and lifestyle data.
-
-**Author:** Lalit Vijay  
-**GitHub:** https://github.com/vijaylalit-PA  
-**Technologies:** Python, Scikit-learn, Pandas, Matplotlib, Seaborn  
+> An end-to-end Machine Learning regression project for predicting healthcare insurance charges using demographic and lifestyle features.
 
 ---
 
-## 📖 Project Overview
-This project builds a Machine Learning model to predict medical insurance charges based on demographic and lifestyle factors such as age, BMI, smoking status, number of children, and region.
 
-The project includes:
+**Author:** Lalit Vijay  
+**Technologies:** Python, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn  
+
+
+---
+
+## 📌 Project Overview
+
+This project builds predictive Machine Learning models to estimate medical insurance charges based on:
+
+- Age  
+- Gender  
+- BMI  
+- Number of children  
+- Smoking status  
+- Region  
+
+The project demonstrates the complete ML workflow including:
+
 - Exploratory Data Analysis (EDA)
 - Data Preprocessing
-- Regression Modeling
+- Feature Encoding
+- Model Building
 - Model Comparison
 - Performance Visualization
+- Model Export (.pkl)
 
 ---
 
 ## 🎯 Problem Statement
-To develop a predictive model that estimates medical insurance costs using supervised machine learning techniques.
+
+To develop a regression-based predictive system that estimates medical insurance costs using supervised machine learning techniques and compare multiple models to determine the best performer.
 
 ---
 
 ## 📊 Dataset Features
 
-- **Age** – Age of the individual  
-- **Sex** – Gender (Male/Female)  
-- **BMI** – Body Mass Index  
-- **Children** – Number of dependents  
-- **Smoker** – Smoking status  
-- **Region** – Residential area  
-- **Charges** – Medical insurance cost (Target Variable)
+| Feature | Description |
+|----------|------------|
+| Age | Age of the individual |
+| Sex | Gender (Male/Female) |
+| BMI | Body Mass Index |
+| Children | Number of dependents |
+| Smoker | Smoking status |
+| Region | Residential region |
+| Charges | Medical insurance cost (Target Variable) |
 
 ---
 
 ## 🤖 Models Implemented
 
-1. Linear Regression  
-2. Random Forest Regressor  
+- Linear Regression  
+- Random Forest Regressor  
 
 ---
 
 ## 📈 Model Performance
 
 | Model | R² Score |
-|-------|----------|
+|--------|----------|
 | Linear Regression | 0.744 |
 | Random Forest | 0.835 |
 
-The Random Forest model outperformed Linear Regression, indicating the presence of non-linear relationships in the dataset.
-
----
-
-## 📊 Model Visualizations
-
-### 🔹 Model Comparison (R² Score)
-![Model Comparison](images/model_comparison.png)
-
-### 🔹 Actual vs Predicted (Random Forest)
-![Actual vs Predicted](images/actual_vs_predicted.png)
-
-### 🔹 Feature Importance (Random Forest)
-![Feature Importance](images/feature_importance.png)
+Random Forest outperformed Linear Regression, indicating the presence of non-linear relationships in the dataset.
 
 ---
 
@@ -72,10 +76,38 @@ The Random Forest model outperformed Linear Regression, indicating the presence 
 
 - Smoking status has the highest impact on insurance charges.
 - BMI and Age significantly influence medical costs.
-- Random Forest captures complex patterns better than Linear Regression.
+- Random Forest captures complex relationships better than Linear Regression.
 
 ---
 
+## 📷 Visualizations
+
+### Model Comparison
+![Model Comparison](images/model_comparison.png)
+
+### Actual vs Predicted (Random Forest)
+![Actual vs Predicted](images/actual_vs_predicted.png)
+
+### Feature Importance
+![Feature Importance](images/feature_importance.png)
+
+## 📂 Project Structure
+
+```yaml
+Medical-Insurance-Cost-Prediction-ML:
+  images:
+    - model_comparison.png
+    - actual_vs_predicted.png
+    - feature_importance.png
+
+  files:
+    - Medical_Insurance_Cost_Prediction.ipynb
+    - insurance.csv
+    - insurance_model.pkl
+    - requirements.txt
+    - README.md
+    - LICENSE
+```
 
 ## 🚀 How to Run
 
@@ -83,14 +115,48 @@ The Random Forest model outperformed Linear Regression, indicating the presence 
 
 ```bash
 git clone https://github.com/vijaylalit-PA/Medical-Insurance-Cost-Prediction-ML.git
-2️⃣ Install dependencies
+```
+
+### 2️⃣ Navigate into the project folder
+
+```bash
+cd Medical-Insurance-Cost-Prediction-ML
+```
+
+### 3️⃣ Install dependencies
+
+```bash
 pip install -r requirements.txt
-3️⃣ Run the notebook
-Open and run:
+```
 
+### 4️⃣ Run the notebook
+
+Open and execute:
+
+```
 Medical_Insurance_Cost_Prediction.ipynb
+```
 
-📌 Conclusion
+---
 
-This project demonstrates how machine learning techniques can effectively predict healthcare insurance costs and highlights the importance of model comparison in regression tasks.
+## 💾 Model Export
 
+The trained model is saved as:
+
+```
+insurance_model.pkl
+```
+
+This allows reuse or deployment without retraining.
+
+---
+
+## 📌 Conclusion
+
+- Machine learning can effectively predict healthcare insurance costs.
+- Model comparison is important in regression tasks.
+- Random Forest outperformed Linear Regression.
+- Smoking status has the strongest impact on insurance charges.
+- Non-linear relationships exist in the dataset.
+
+This project demonstrates a complete end-to-end ML workflow including EDA, preprocessing, modeling, evaluation, and model export.
