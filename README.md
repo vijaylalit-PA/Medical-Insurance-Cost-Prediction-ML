@@ -3,8 +3,10 @@
 > An end-to-end regression-based machine learning project for predicting healthcare insurance charges using demographic and lifestyle data.
 
 **Author:** Lalit Vijay  
+**GitHub:** https://github.com/vijaylalit-PA  
 **Technologies:** Python, Scikit-learn, Pandas, Matplotlib, Seaborn  
 
+---
 
 ## 📖 Project Overview
 This project builds a Machine Learning model to predict medical insurance charges based on demographic and lifestyle factors such as age, BMI, smoking status, number of children, and region.
@@ -53,6 +55,19 @@ The Random Forest model outperformed Linear Regression, indicating the presence 
 
 ---
 
+## 📊 Model Visualizations
+
+### 🔹 Model Comparison (R² Score)
+![Model Comparison](images/model_comparison.png)
+
+### 🔹 Actual vs Predicted (Random Forest)
+![Actual vs Predicted](images/actual_vs_predicted.png)
+
+### 🔹 Feature Importance (Random Forest)
+![Feature Importance](images/feature_importance.png)
+
+---
+
 ## 📊 Key Insights
 
 - Smoking status has the highest impact on insurance charges.
@@ -61,19 +76,21 @@ The Random Forest model outperformed Linear Regression, indicating the presence 
 
 ---
 
+
 ## 🚀 How to Run
 
-1. Clone the repository:
+### 1️⃣ Clone the repository
+
+```bash
 git clone https://github.com/vijaylalit-PA/Medical-Insurance-Cost-Prediction-ML.git
-
-2. Install dependencies:
+2️⃣ Install dependencies
 pip install -r requirements.txt
+3️⃣ Run the notebook
+Open and run:
 
-3. Run the notebook:
 Medical_Insurance_Cost_Prediction.ipynb
 
+📌 Conclusion
 
----
-
-## 📌 Conclusion
 This project demonstrates how machine learning techniques can effectively predict healthcare insurance costs and highlights the importance of model comparison in regression tasks.
+
