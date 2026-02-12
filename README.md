@@ -91,23 +91,24 @@ Random Forest outperformed Linear Regression, indicating the presence of non-lin
 ### Feature Importance
 ![Feature Importance](images/feature_importance.png)
 
-## 📂 Project Structure
+## 📁 Project Structure
 
-```yaml
-Medical-Insurance-Cost-Prediction-ML:
-  images:
-    - model_comparison.png
-    - actual_vs_predicted.png
-    - feature_importance.png
-
-  files:
-    - Medical_Insurance_Cost_Prediction.ipynb
-    - insurance.csv
-    - insurance_model.pkl
-    - requirements.txt
-    - README.md
-    - LICENSE
 ```
+Medical-Insurance-Cost-Prediction-ML/
+│
+├── images/
+│   ├── model_comparison.png
+│   ├── actual_vs_predicted.png
+│   └── feature_importance.png
+│
+├── Medical_Insurance_Cost_Prediction.ipynb
+├── insurance.csv
+├── insurance_model.pkl
+├── requirements.txt
+├── README.md
+└── LICENSE
+```
+
 
 ## 🚀 How to Run
 
