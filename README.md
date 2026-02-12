@@ -2,7 +2,7 @@
 
 > An end-to-end regression-based machine learning project for predicting healthcare insurance charges using demographic and lifestyle data.
 
-**Author:** Vijay Lalit  
+**Author:** Lalit Vijay  
 **Technologies:** Python, Scikit-learn, Pandas, Matplotlib, Seaborn  
 
 
